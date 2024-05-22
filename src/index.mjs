@@ -29,8 +29,6 @@ console.log(typeof num1);
 console.log(typeof z);
 let y = parseInt(num1);
 console.log(typeof y);
-console.log(Math.floor(Math.random() * 20));
-
-//The Day 2 javascript 
+console.log(Math.floor(Math.random() * 
 
 
