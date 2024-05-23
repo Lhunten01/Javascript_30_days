@@ -1,0 +1,43 @@
+//for loop
+const array = [];
+const fruits = ["apple", "orange", "banana", "mango"];
+for (let i = 0; i < fruits.length; i++) {
+  array.push(fruits[i]);
+}
+for (const fruit of fruits) {
+  array.push(fruit);
+}
+//do-while
+let x = 1;
+do {
+  console.log(x);
+  x++;
+} while (x < 10);
+
+export function takeinput() {
+  let container = document.getElementById("container");
+  let newele = document.createElement("p");
+  newele.innerText = array;
+  container.appendChild(newele);
+}
+const check = (...args) => {
+  let x = 0;
+  for (const element of args) x += element;
+  return x;
+};
+const Changetoupper = (arr) => {
+  let array = [];
+  for (const country of countries) array.push(country.toUpperCase());
+  return array;
+};
+const countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"];
+console.log(Changetoupper(countries));
+window.takeinput = takeinput;
+console.log(check(1, 2, 3, 4, 12, 5));
+console.log(container);
+
+const checkWeight = (mass, gravity = 9.5) => {
+  let weight = mass * gravity;
+  return weight;
+};
+console.log(checkWeight(17, 3));
