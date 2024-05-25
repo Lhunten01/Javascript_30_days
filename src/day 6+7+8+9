@@ -1,0 +1,343 @@
+// const person = [
+//   {
+//     firstName: "Asabeneh",
+//     lastName: "Yetayeh",
+//     age: 250,
+//     country: "Finland",
+//     city: "Helsinki",
+//     skills: ["HTML", "CSS", "JavaScript", "React", "Node"],
+//     getFullName: function () {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//     getskillsize: function () {
+//       return this.skills.length;
+//     },
+//   },
+//   {
+//     firstName: "neh",
+//     lastName: "Yetayeh",
+//     age: 250,
+//     country: "Finland",
+//     city: "Helsinki",
+//     skills: ["HTML", "CSS", "JavaScript", "React", "Node", "MongoDB", "Python"],
+//     getFullName: function () {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//     getskillsize: function () {
+//       return this.skills.length;
+//     },
+//   },
+//   {
+//     firstName: "rseneh",
+//     lastName: "Yetayeh",
+//     age: 250,
+//     country: "Finland",
+//     city: "Helsinki",
+//     skills: ["HTML", "CSS", "JavaScript", "React"],
+//     getFullName: function () {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//     getskillsize: function () {
+//       return this.skills.length;
+//     },
+//   },
+// ];
+// person.nationality = "Ethiopian";
+// person.country = "Finland";
+// person.title = "teacher";
+// person.isMarried = true;
+
+// // person.getPersonInfo = function () {
+// //   let skillsWithoutLastSkill = this.skills
+// //     .splice(0, this.skills.length - 1)
+// //     .join(", ");
+// //   let lastSkill = this.skills.splice(this.skills.length - 1)[0];
+
+// //   let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`;
+// //   let fullName = this.getFullName();
+// //   let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`;
+// //   return statement;
+// // };
+// console.log(person);
+// // console.log(person.getPersonInfo());
+// // const copyPerson = Object.assign({}, person);
+// console.log("hhhhhss");
+// // console.log(copyPerson);
+// // console.log(person.skills.length);
+// let personWithMostSkills = person[0];
+// for (let i = 0; i < person.length; i++) {
+//   console.log(person[i].skills.length);
+//   if (person[i].skills.length > personWithMostSkills) {
+//     personWithMostSkills = person[i];
+//   }
+// }
+// console.log(personWithMostSkills);
+// const users = [
+//   {
+//     firstName: "Asabeneh",
+//     lastName: "Yetayeh",
+//     age: 250,
+//     country: "Finland",
+//     city: "Helsinki",
+//     skills: [
+//       "HTML",
+//       "CSS",
+//       "JavaScript",
+//       "React",
+//       "Node",
+//       "MongoDB",
+//       "Python",
+//       "D3.js",
+//     ],
+//     getFullName: function () {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//   },
+//   {
+//     firstName: "Eyob",
+//     lastName: "Yetayeh",
+//     age: 22,
+//     country: "Sweden",
+//     city: "Goteborg",
+//     skills: [
+//       "HTML",
+//       "CSS",
+//       "JavaScript",
+//       "React",
+//       "Node",
+//       "MongoDB",
+//       "tere",
+//       "rerewrw",
+//     ],
+//     getFullName: function () {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//   },
+//   {
+//     firstName: "David",
+//     lastName: "Smith",
+//     age: 35,
+//     country: "USA",
+//     city: "New York",
+//     skills: ["Python", "D3.js", "Ruby", "C++"],
+//     getFullName: function () {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//   },
+// ];
+
+// let personWithMost = users[0];
+// for (let i = 1; i < users.length; i++) {
+//   console.log(users[i].skills.lengt);
+//   if (users[i].skills.length > personWithMostSkills.skills.length) {
+//     personWithMostSkills = users[i];
+//   }
+// }
+
+// console.log(personWithMost); // Asabeneh Yetayeh
+
+// const users = {
+//   Alex: {
+//     email: "alex@alex.com",
+//     skills: ["HTML", "CSS", "JavaScript"],
+//     age: 20,
+//     isLoggedIn: false,
+//     points: 30,
+//   },
+//   Asab: {
+//     email: "asab@asab.com",
+//     skills: [
+//       "HTML",
+//       "CSS",
+//       "JavaScript",
+//       "Redux",
+//       "MongoDB",
+//       "Express",
+//       "React",
+//       "Node",
+//     ],
+//     age: 25,
+//     isLoggedIn: false,
+//     points: 50,
+//   },
+//   Brook: {
+//     email: "daniel@daniel.com",
+//     skills: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+//     age: 30,
+//     isLoggedIn: true,
+//     points: 50,
+//   },
+//   Daniel: {
+//     email: "daniel@alex.com",
+//     skills: ["HTML", "CSS", "JavaScript", "Python"],
+//     age: 20,
+//     isLoggedIn: false,
+//     points: 40,
+//   },
+//   John: {
+//     email: "john@john.com",
+//     skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js"],
+//     age: 20,
+//     isLoggedIn: true,
+//     points: 50,
+//   },
+//   Thomas: {
+//     email: "thomas@thomas.com",
+//     skills: ["HTML", "CSS", "JavaScript", "React"],
+//     age: 20,
+//     isLoggedIn: false,
+//     points: 40,
+//   },
+//   Paul: {
+//     email: "paul@paul.com",
+//     skills: [
+//       "HTML",
+//       "CSS",
+//       "JavaScript",
+//       "MongoDB",
+//       "Express",
+//       "React",
+//       "Node",
+//     ],
+//     age: 20,
+//     isLoggedIn: false,
+//     points: 40,
+//   },
+// };
+
+// const mernStackDevelopers = [];
+// for (const user in users) {
+//   const skill = users[user].skills;
+//   if (
+//     skill.includes("MongoDB") &&
+//     skill.includes("Express") &&
+//     skill.includes("React") &&
+//     skill.includes("Node")
+//   ) {
+//     mernStackDevelopers.push(user);
+//   }
+// }
+// console.log(mernStackDevelopers);
+// users["yyy"] = {
+//   email: "your.email@example.com",
+//   skills: ["HTML", "CSS", "JavaScript", "React"],
+//   age: 30,
+//   isLoggedIn: true,
+//   points: 100,
+// };
+// console.log(Object.keys(users));
+// console.log(Object.values(users));
+
+const countries = ["Finland", "Sweden", "Denmark", "Norway", "IceLand"];
+const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const products = [
+  { product: "banana", price: 3 },
+  { product: "mango", price: 6 },
+  { product: "potato", price: " " },
+  { product: "avocado", price: 8 },
+  { product: "coffee", price: 10 },
+  { product: "tea", price: "" },
+];
+//Explain the difference between forEach, map, filter, and reduce.
+// countries.forEach((country) => {
+//   console.log(country);
+// });
+// let sum = 0;
+// numbers.forEach((number) => {
+//   sum += number;
+//   console.log(sum);
+// });
+// console.log(sum);
+// const uppercountry = countries.map((country) =>
+//   country.toUpperCase().slice(0, 3)
+// );
+// console.log(uppercountry);
+
+// const lowerCountry = countries.map((country) => country.toLocaleLowerCase());
+// console.log(lowerCountry);
+
+// const witha = countries.filter(
+//   (country) => country.includes("a") && country.length > 6
+// );
+
+// console.log(witha);
+// let pricesum = 0;
+// const pricegreater = products.filter((prod) => {
+//   let price = parseInt(prod["price"]);
+//   if (price >= 8 && !isNaN(price)) pricesum += price;
+//   return pricesum;
+// });
+
+// console.log(pricegreater);
+// console.log(pricesum);
+// let count = 0;
+// count = numbers.reduce((acc, curr) => acc + curr, 0);
+// console.log(count);
+
+// function greet(name) {
+//   console.log(`hi i am ${name}`);
+// }
+// function pasthename(callback) {
+//   const name = "Tenzin";
+//   callback(name);
+// }
+// pasthename(greet);
+
+// function greet(name) {
+//   console.log(`hi i am the ${name}`);
+// }
+// function sendName(callback) {
+//   const name = "tenzin lhundp";
+//   setTimeout(() => {
+//     callback("message is displayed after 2 seconds");
+//   }, 2000);
+// }
+// sendName(greet);
+// const startE = names.filter((name) => {
+//   return name.startsWith("E");
+// });
+// console.log(startE);
+
+// const sentence = countries.reduce((acc, country, index) => {
+//   if (index == 0) return country;
+//   else if (index == countries.length - 1) return `${acc} and ${country}`;
+//   else return `${acc} and ${country}`;
+// });
+// console.log(sentence);
+// const summation = numbers.reduce((acc, number, index) => {
+//   if (index == 0) return number;
+//   else {
+//     console.log(`${index} and ${acc}`);
+//     return (acc += number);
+//   }
+// });
+// console.log(summation);
+
+const x = numbers.every((number) => {
+  return number > 5;
+});
+console.log(x);
+
+const y = numbers.some((number) => {
+  return number > 5;
+});
+console.log(y);
+
+const z = products.find((prod) => {
+  let a = parseFloat(prod.pric);
+  return !isNaN(a) && a > 5;
+});
+console.log(z);
+
+const totalprice = products
+  .map((prod) => parseFloat(prod.price))
+  .filter((price) => !isNaN(price))
+  .reduce((acc, price) => (acc += price));
+console.log(totalprice);
+
+const totalsum = products.reduce((acc, prod) => {
+  let t = parseFloat(prod.price);
+  return isNaN(t) ? acc : acc + t;
+});
+console.log(totalsum);
